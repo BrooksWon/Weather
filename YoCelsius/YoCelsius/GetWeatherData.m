@@ -13,7 +13,8 @@
 #import "CurrentWeatherData.h"
 #import "Networking.h"
 
-static NSString *appIdKey = @"8781e4ef1c73ff20a180d3d7a42a8c04";
+//static NSString *appIdKey = @"8781e4ef1c73ff20a180d3d7a42a8c04";
+static NSString *appIdKey = @"05048f91472d1186a7035d5cc5c1d3d5";
 
 typedef enum : NSUInteger {
     
