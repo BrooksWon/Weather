@@ -11,6 +11,8 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 
+#import "UMMobClick/MobClick.h"
+
 @interface AppDelegate ()
 
 @end
@@ -43,6 +45,13 @@
     
     // 隐藏状态栏
     [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:NO];
+    
+    //UM统计分析
+    UMConfigInstance.appKey = @"573bc7f167e58ec3c8001a8e";
+    UMConfigInstance.token = @"573bc7f167e58ec3c8001a8e";
+    UMConfigInstance.secret = @"BeooksWon";
+    [MobClick startWithConfigure:UMConfigInstance];
+    [MobClick setLogEnabled:YES];
     
     return YES;
 }

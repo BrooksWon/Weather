@@ -154,6 +154,10 @@
 		10E1F5381A908C3200AED5D6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10E1F5371A908C3200AED5D6 /* ViewController.m */; };
 		10E1F53D1A908C3200AED5D6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10E1F53C1A908C3200AED5D6 /* Images.xcassets */; };
 		10F6530B1B8310D2004E45FC /* NSString+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F6530A1B8310D2004E45FC /* NSString+Color.m */; };
+		9861E44F1CEC00A6005A11DA /* UMMobClick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9861E44E1CEC00A6005A11DA /* UMMobClick.framework */; };
+		9861E4511CEC00C4005A11DA /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9861E4501CEC00C4005A11DA /* CoreTelephony.framework */; };
+		9861E4531CEC00CB005A11DA /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9861E4521CEC00CB005A11DA /* libz.tbd */; };
+		9861E4551CEC00DB005A11DA /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9861E4541CEC00DB005A11DA /* libsqlite3.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -468,6 +472,10 @@
 		10F653081B831018004E45FC /* SimpleNSLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleNSLog.h; sourceTree = "<group>"; };
 		10F653091B8310D2004E45FC /* NSString+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Color.h"; sourceTree = "<group>"; };
 		10F6530A1B8310D2004E45FC /* NSString+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Color.m"; sourceTree = "<group>"; };
+		9861E44E1CEC00A6005A11DA /* UMMobClick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMMobClick.framework; sourceTree = "<group>"; };
+		9861E4501CEC00C4005A11DA /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		9861E4521CEC00CB005A11DA /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		9861E4541CEC00DB005A11DA /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -475,6 +483,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9861E4551CEC00DB005A11DA /* libsqlite3.tbd in Frameworks */,
+				9861E4531CEC00CB005A11DA /* libz.tbd in Frameworks */,
+				9861E4511CEC00C4005A11DA /* CoreTelephony.framework in Frameworks */,
+				9861E44F1CEC00A6005A11DA /* UMMobClick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1000,6 +1012,10 @@
 		10E1F5231A908C3200AED5D6 = {
 			isa = PBXGroup;
 			children = (
+				9861E4541CEC00DB005A11DA /* libsqlite3.tbd */,
+				9861E4521CEC00CB005A11DA /* libz.tbd */,
+				9861E4501CEC00C4005A11DA /* CoreTelephony.framework */,
+				9861E44E1CEC00A6005A11DA /* UMMobClick.framework */,
 				10E1F52E1A908C3200AED5D6 /* YoCelsius */,
 				10E1F52D1A908C3200AED5D6 /* Products */,
 			);
@@ -1363,14 +1379,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: jianyu wang (4XUU6CEV36)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: jianyu wang (4XUU6CEV36)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: jianyu wang (TXSG7PC5L6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: jianyu wang (TXSG7PC5L6)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/YoCelsius.pch";
 				INFOPLIST_FILE = YoCelsius/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.BrooksWon.U;
 				PRODUCT_NAME = YoCelsius;
-				PROVISIONING_PROFILE = "76356c81-2e06-4f39-8754-cee3904dfded";
+				PROVISIONING_PROFILE = "be5f9507-3e94-4bd1-be45-f1859c546527";
 				SWIFT_OBJC_BRIDGING_HEADER = "YXMWeather/DTIActivity/YXMWeather-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1383,14 +1403,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: jianyu wang (4XUU6CEV36)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: jianyu wang (4XUU6CEV36)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: jianyu wang (TXSG7PC5L6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: jianyu wang (TXSG7PC5L6)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/YoCelsius.pch";
 				INFOPLIST_FILE = YoCelsius/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.BrooksWon.U;
 				PRODUCT_NAME = YoCelsius;
-				PROVISIONING_PROFILE = "76356c81-2e06-4f39-8754-cee3904dfded";
+				PROVISIONING_PROFILE = "be5f9507-3e94-4bd1-be45-f1859c546527";
 				SWIFT_OBJC_BRIDGING_HEADER = "YXMWeather/DTIActivity/YXMWeather-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
