@@ -1381,6 +1381,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: jianyu wang (TXSG7PC5L6)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: jianyu wang (TXSG7PC5L6)";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -1388,7 +1389,7 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/YoCelsius.pch";
 				INFOPLIST_FILE = YoCelsius/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.BrooksWon.U;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BrooksWon.Weather;
 				PRODUCT_NAME = YoCelsius;
 				PROVISIONING_PROFILE = "be5f9507-3e94-4bd1-be45-f1859c546527";
 				SWIFT_OBJC_BRIDGING_HEADER = "YXMWeather/DTIActivity/YXMWeather-Bridging-Header.h";
@@ -1405,6 +1406,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: jianyu wang (TXSG7PC5L6)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: jianyu wang (TXSG7PC5L6)";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -1412,7 +1414,7 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/YoCelsius.pch";
 				INFOPLIST_FILE = YoCelsius/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.BrooksWon.U;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BrooksWon.Weather;
 				PRODUCT_NAME = YoCelsius;
 				PROVISIONING_PROFILE = "be5f9507-3e94-4bd1-be45-f1859c546527";
 				SWIFT_OBJC_BRIDGING_HEADER = "YXMWeather/DTIActivity/YXMWeather-Bridging-Header.h";
